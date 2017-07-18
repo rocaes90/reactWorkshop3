@@ -1,0 +1,164 @@
+@import "variables.scss";
+
+body {
+    .app-cont {
+        overflow: hidden;
+        width: 80%;
+        margin: auto;
+        background-color: $cl-principal-container;
+        border: 1px solid;
+        border-radius: 10px;
+        .title-cont {
+            border-radius: 10px;
+            width: 100%;
+            height: 30px;
+            background: black;
+            color: white;
+            text-align: center;
+            .title {
+                font-size: $fontsize-title;
+                font-family: $fontstyle-general;
+            }
+        }
+        .entity-cont {
+            .entity-list {
+                display: block;
+                width: 95%;
+                margin: auto;
+            }
+            .query-list {
+                display: block;
+                .query-list-enter {
+                    transition: all 0.25s;
+                    -webkit-transform: translateX(-100%);
+                            transform: translateX(-100%);
+                    max-height: 0;
+                    padding: 0;
+                    display: inline-block;
+                }
+                .query-list-enter.query-list-enter-active {
+                    max-height: 20px;
+                    -webkit-transform: translateX(0);
+                            transform: translateX(0);
+                }
+                .query-list-leave {
+                    transition: all 0.2s;
+                    -webkit-transform: translateX(0);
+                            transform: translateX(0);
+                }
+                .query-list-leave.query-list-leave-active {
+                    -webkit-transform: translateX(150%);
+                            transform: translateX(150%);
+                    max-height: 0;
+                    padding: 0;
+                }
+                .query {
+                    margin: 10px;
+                    border-left: 1px solid black;
+                    padding-left: 15px;
+                    display: inline-block;
+                    font-family: $fontstyle-general;
+                    font-size: $fontsize-general;
+                    .btn {
+                        cursor: pointer;
+                        background: none;
+                        border: none;
+                        position: relative;
+                        top: 2px;
+                        & img {
+                            width: 12px;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    .querydet {
+                        display: inline-block;
+                    }
+                                    
+                }
+            }
+        }
+        .generator-cont {
+            width: 100%;
+            .combinator-cont {
+                display: block;
+                width: 95%;
+                margin: auto;
+            }
+            .attribute-cont {
+                display: block;
+                width: 95%;
+                margin: auto;
+            }
+            .operator-cont {                
+                display: block;
+                width: 95%;
+                margin: auto;
+            }
+            .value-inp {
+                display: block;                
+                width: 95%;
+                margin: auto;
+                margin: 10px;
+                height: auto;
+                position: relative;
+                .inp-select {
+                    display: inline-block;
+                    width: 50%;
+                }
+                .inp-param {
+                    margin: 10px 0 10px 0;
+                    height: 20px;
+                }
+                & input select {
+                    display: inline-block;
+                    height: 20px;
+                    border-radius: 3px;
+                    border: 1px solid gray;
+                }
+            }
+            .btn {
+                background: none;
+                border: none;
+                position: relative;
+                top: 9px;
+                & img {
+                    width: 25px;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+        .btn-send {
+            margin: 10px auto 0 auto;
+            height: 30px;
+            width: 95%;
+            border-radius: 10px;
+            border: none;
+            display: block;
+            cursor: pointer;
+            &:focus {
+                outline: none;
+                box-shadow: 0px 0px 0px 2px skyblue;
+            }
+        }
+        .btn-leyend {            
+            float: right;
+            font-family: $fontstyle-general;
+            font-size: $fontsize-leyend;
+            padding: 0 15px 0 0;
+        }
+    }
+    .multi-sel-ctrl {
+        margin: 10px 0 10px 0;
+        height: 30px;
+        width: 100%;
+        border-radius: 10px;
+        &:focus {
+            outline: none;
+            box-shadow: 0px 0px 0px 2px skyblue;
+        }
+    }
+}

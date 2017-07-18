@@ -1,0 +1,79 @@
+{
+    "entity": [
+        {
+            "label": "Instrument",
+            "id": "instrument"
+        },
+        {
+            "label": "Organization",
+            "id": "organization"
+        },
+        {
+            "label": "Case",
+            "id": "case"
+        }
+    ],
+    "combinator": [
+        "AND",
+        "OR"
+    ],
+    "attribute": [
+        {
+           "instrument": [
+               "INS_STRING",
+               "INS_NUMBER",
+               "INS_DATE",
+               "INS_BOOLEAN",
+               "INS_ENUM"
+           ] 
+        },
+        {
+           "organization": [
+               "ORG_STRING",
+               "ORG_NUMBER",
+               "ORG_DATE",
+               "ORG_BOOLEAN",
+               "ORG_ENUM"
+           ] 
+        },
+        {
+           "case": [
+               "CAS_STRING",
+               "CAS_NUMBER",
+               "CAS_DATE",
+               "CAS_BOOLEAN",
+               "CAS_ENUM"
+           ] 
+        }
+    ],
+    "operator": {
+        "in": "In",
+        "not_in": "Not In",
+        "equals": "Equals",
+        "does_not_equal": "Does Not Equal",
+        "greater_than": "Greater Than",
+        "less_than": "Less Than",
+        "less_than_or_equal": "Less Than Or Equal",
+        "greater_than_or_equal": "Greater Than Or Equal",
+        "like": "Like",
+        "not_like": "Not Like",
+        "contains": "Contains",
+        "starts_with": "Starts With",
+        "ends_with": "Ends With"
+    },
+    "enum": [
+        "DZD",
+        "USD",
+        "EUR",
+        "AOA",
+        "XCD",
+        "ARS",
+        "AMD",
+        "AWG",
+        "AUD",
+        "AZN",
+        "BSD",
+        "BHD",
+        "BDT"
+    ]
+}
