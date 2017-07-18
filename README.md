@@ -25,6 +25,7 @@ The application must support adding multiple queries and must allow users to rem
 - webpack
     - webpack-server
 - sass
+    - Media Queries
 - babel
     - css-loader
     - sass-loader
