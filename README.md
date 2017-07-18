@@ -1,5 +1,5 @@
 # ABOUT THE TEST
-I developed this test like part of the Sapient recruitment process.
+I developed this test as part of my learn process about ReactJS.
 
 ## INSTRUCTIONS
 ```
